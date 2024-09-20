@@ -4,11 +4,14 @@ This YouTube Downloader application allows you to easily download videos from Yo
 
 This application is built using Python and a graphical user interface (GUI) for ease of use. You simply need to enter the YouTube video link, and the app will handle the rest.
 
-![YouTube Downloader GUI](screenshots/Screengrap.PNG)
+![YouTube Downloader GUI](screenshots/Screengrap_v1.1.PNG)
 <p align="center">
 *UI may look outdated because I was using a virtual machine (VM) during the demonstration.*
 </p>
 
+<p align="center">
+<strong>For the latest updates and improvements, please read the <a href="Updates_and_Improvements.md">Updates and Improvements</a> document.</strong>
+</p>
 
 ## Requirements
 
