@@ -2,7 +2,10 @@
 
 This YouTube Downloader application allows you to easily download videos from YouTube. Built using Python with a graphical user interface (GUI), the app simplifies the download process—just enter the YouTube video link, and the app handles the rest.
 
+<br>
+
 ![YouTube Downloader GUI](screenshots/Screengrap_v1.1.PNG)
+
 <p align="center">
 *UI may look outdated because I was using a virtual machine (VM) during the demonstration*
 </p>
@@ -21,66 +24,82 @@ This YouTube Downloader application allows you to easily download videos from Yo
 
 ## Requirements
 
-- Python 3.7 or higher.
-- Libraries: `yt-dlp`, `customtkinter`, etc. (see [Installing Dependencies](#installing-dependencies)).
+Before you start, you need to have Python installed on your computer. If you don’t have it yet, you can download it from [python.org](https://www.python.org/downloads/).
 
-## Installing Dependencies
+If you're new to Python, watch this video to learn how to download and install it: [Watch this video](https://www.youtube.com/watch?v=nU2Egc3Zx3Q).
+
+### Installing Dependencies
 
 1. **Download the Project:**
-   - To get started, download the project files by either:
-     - Clicking the "Download" button if available.
-     - Cloning the repository using Git:
+   - To get started, you need to download the project files. You can either:
+     - Click on the "Download" button if available.
+     - Clone the repository using Git by running the following command in your terminal:
+       
        ```bash
        git clone <repository-url>
        ```
      - Replace `<repository-url>` with the actual URL of the project repository.
 
 2. **Open a Terminal/Command Prompt:**
-   - After downloading the project, open a terminal (macOS/Linux) or Command Prompt (Windows).
-   - Navigate to the folder where you downloaded the project using the `cd` command:
-     ```bash
-     cd path/to/your/project-folder
-     ```
+   - After downloading the project, you need to open a terminal (on macOS/Linux) or Command Prompt (on Windows).
+   - To navigate to the folder where you downloaded the project, use the `cd` (change directory) command. For example:
+     
+       ```bash
+       cd path/to/your/project-folder
+       ```
+   - Replace `path/to/your/project-folder` with the actual path where you saved the project.
 
 3. **Install Required Libraries:**
-   - Run the following command to install necessary libraries:
-     ```bash
-     pip install -r requirements.txt
-     ```
+   - The project relies on specific Python libraries to function correctly. You can install these libraries using pip, which is Python's package installer.
+   - Run the following command in the terminal:
+     
+       ```bash
+       pip install -r requirements.txt
+       ```
+   - This command looks for a file named `requirements.txt` in your project folder, which contains a list of necessary libraries, including `yt-dlp` (for downloading videos) and `customtkinter` (for creating the graphical user interface).
 
 ## How to Run the Application
 
 1. **Open the Project Folder:**
-   - Ensure you are still in the project folder in your terminal or Command Prompt.
+   - Make sure you are still in the project folder in your terminal or Command Prompt. You can check your current directory by running:
+     
+       ```bash
+       pwd  # For macOS/Linux
+       ```
+     
+       ```bash
+       cd  # For Windows
+       ```
 
 2. **Run the Application:**
-   - Execute the following command to start the YouTube Downloader application:
-     ```bash
-     python main.py
-     ```
+   - To start the YouTube Downloader application, execute the following command:
+     
+       ```bash
+       python main.py
+       ```
+   - This command tells Python to run the `main.py` file, which contains the application's code.
 
 3. **Using the Application:**
-   - Once the application opens, you will see a GUI with a text box.
-   - Paste the YouTube video link you wish to download in the text box. Ensure the link starts with `https://` (e.g., `https://www.youtube.com/watch?v=video_id`).
-   - Click the "Download" button.
+   - Once the application opens, you will see a graphical user interface (GUI) with a text box.
+   - In this text box, paste the YouTube video link you wish to download. Make sure the link starts with `https://` (e.g., `https://www.youtube.com/watch?v=video_id`).
+   - After entering the link, click the "Download" button.
 
 4. **Check the Download Status:**
-   - The application will display download progress in the GUI, indicating how much of the video has been downloaded.
-   - A message will appear upon successful completion of the download.
+   - The application will display the progress of the download in the GUI. You will see messages indicating how much of the video has been downloaded.
+   - Once the download is complete, a message will appear confirming the successful download.
 
 ## Exporting Files
 
-- The downloaded video will be saved in the same folder as the application, named according to its title on YouTube with the appropriate file extension (e.g., `.mp4`).
+- The downloaded video will be saved in the same folder where the application is located. The video will be named according to its title on YouTube, with the appropriate file extension (e.g., .mp4).
 
 ## Troubleshooting
 
 - **If you encounter errors:**
-  - **Invalid Video URL:** Ensure the URL is correct and starts with `https://www.youtube.com/`.
-  - **DownloadError:** If you receive a `DownloadError`, verify the video is available on YouTube.
-  - **Internet Connection Issues:** Check that your internet connection is stable.
-  - **Application Crashes:** Take note of any error messages displayed, which can help identify the problem. Refer to the documentation or seek help from the community.
-
-- **Need Further Assistance?** If you're still having issues, please create an issue in the repository, and I'll be happy to help troubleshoot.
+  - **Invalid Video URL:** Ensure the video URL is correct and starts with `https://www.youtube.com/`. If it's a different format, the application may not recognize it.
+  - **Internet Connection Issues:** Check your internet connection to ensure it's stable and functioning.
+  - **Application Crashes:** If the application closes unexpectedly, note any error messages displayed. These can help identify the problem. You can also refer to the documentation or seek help from the community.
+  
+- **Need Further Assistance?** If you're still having issues, please create an issue in my repository, and I will be happy to help you troubleshoot.
 
 ## Additional Notes
 
