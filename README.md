@@ -13,6 +13,12 @@ This application is built using Python and a graphical user interface (GUI) for 
 <strong>For the latest updates and improvements, please read the <a href="Updates_and_Improvements.md">Updates and Improvements</a> document.</strong>
 </p>
 
+<p align="center">
+  <strong>For those who don't have a VSCode setup, check out the guide: <a href="No_VSCode_Setup_No_Worries.md">No VSCode Setup? No Worries!</a></strong>
+</p>
+
+---
+
 ## Requirements
 
 Before you start, you need to have Python installed on your computer. If you don’t have it yet, you can download it from [python.org](https://www.python.org/downloads/).
