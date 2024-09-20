@@ -64,6 +64,15 @@ def Download():
         # yt-dlp options
         ydl_opts = {  # Sets options for yt-dlp
             'format': 'best',  # Specifies to download the best quality available.
+            # Available format options:
+            # 'worst' - Downloads the lowest quality available.
+            # 'bestvideo' - Downloads the best video quality only.
+            # 'bestaudio' - Downloads the best audio quality only.
+            # 'bestvideo[height<=720]' - Best video under or equal to 720p.
+            # 'bestaudio[abr<=192]' - Best audio with an average bitrate of 192 kbps or lower.
+            # 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best' - Best video in MP4 and best audio in M4A.
+            # Combinations like 'bestvideo[height<=1080]+bestaudio/best' for quality under 1080p.
+            
             'outtmpl': '%(title)s.%(ext)s',  # Saves the file with the video title as the filename.
             'progress_hooks': [on_progress],  # Attaches the progress callback function.
         }
